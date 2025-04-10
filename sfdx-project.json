@@ -1,10 +1,13 @@
-{ "packageDirectories":[
-    { "path": "force-app",
-     "default": true 
-   } 
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
   ],
-   "name": "SolutionFactory", 
-   "sfdcLoginUrl": "https://login.test1.pc-rnd.salesforce.com/", 
-   "signupTargetLoginUrl": "https://.login.pc-rnd.salesforce.com/", 
-   "sourceApiVersion": "63.0" 
+  "name": "itsm-sample",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.test1.pc-rnd.salesforce.com/", 
+  "signupTargetLoginUrl": "https://test.test1.pc-rnd.salesforce.com/",
+  "sourceApiVersion": "62.0"
 }

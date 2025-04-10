@@ -3,6 +3,9 @@
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
     <name>IncidentRouting</name>
     <queueMembers>
+        <users>
+            <user>request.manager@itsm.org</user>
+        </users>
     </queueMembers>
     <queueRoutingConfig>IncidentRouting_RoutingConfig</queueRoutingConfig>
     <queueSobject>
