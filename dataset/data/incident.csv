@@ -1,0 +1,7 @@
+Id,Category,Description,DetectedDateTime,EndDateTime,Impact,IsMajorIncident,Priority,PriorityOverrideReason,ReportedMethod,ReportedMethodIdentifier,ResolutionSummary,Status,Subject,Type,Urgency,ParentIncidentId
+0nySG0000000jzdYAA,,,,,High,False,Critical,,,,,New,This is first indicents,New,High,0nySG0000000k1FYAQ
+0nySG0000000k1FYAQ,,,,,High,False,Critical,,,,,New,This is the first issue,New,High,
+0nySG0000000kCXYAY,,,,,High,False,Critical,,,,,New,This is the child incident,New,High,
+0nySG0000000kndYAA,,,,,High,False,Critical,,,,,New,Test incident,New,High,
+0nySG0000000uTdYAI,,Can someone please help me with the laptop,,,Medium,False,Critical,,Email,<CAKriLCyvCCU96C4Db3dwavVu4Z+2Ftd4mUY56YjEqyKY_aeKPA@mail.gmail.com>,,New,Need help with my laptop,New,Medium,
+0nySG0000000uVFYAY,,I'm unable to open chrom on my laptop. I have a Mac with OS 15.3.1,,,Medium,False,Critical,,Email,<CAFoNm9sArrRcCXkThqkg3_+e5kK-LY_e6iGK4JPbqiJo3qsCZA@mail.gmail.com>,,New,Chrome not working,New,Medium,
