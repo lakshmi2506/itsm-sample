@@ -1,0 +1,10 @@
+{ "packageDirectories":[
+    { "path": "force-app",
+     "default": true 
+   } 
+  ],
+   "name": "SolutionFactory", 
+   "sfdcLoginUrl": "https://login.test1.pc-rnd.salesforce.com/", 
+   "signupTargetLoginUrl": "https://.login.pc-rnd.salesforce.com/", 
+   "sourceApiVersion": "63.0" 
+}
