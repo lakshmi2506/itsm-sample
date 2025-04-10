@@ -1,893 +1,589 @@
 {
   "metadata": [
-    "Queue",
-    "QueueRoutingConfig"
+      "Queue",
+      "QueueRoutingConfig"
   ],
   "objectsList": {
-    "Incident": {
-      "fields": [
-        {
-          "name": "Id",
-          "type": "id"
-        },
-        {
-          "name": "Category",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Database",
-              "value": "Database"
-            },
-            {
-              "label": "Hardware",
-              "value": "Hardware"
-            },
-            {
-              "label": "Inquiry / Help",
-              "value": "Inquiry / Help"
-            },
-            {
-              "label": "Network",
-              "value": "Network"
-            },
-            {
-              "label": "Software",
-              "value": "Software"
-            },
-            {
-              "label": "Security",
-              "value": "Security"
-            },
-            {
-              "label": "Telephony",
-              "value": "Telephony"
-            },
-            {
-              "label": "Storage",
-              "value": "Storage"
-            },
-            {
-              "label": "Email",
-              "value": "Email"
-            },
-            {
-              "label": "Access Management",
-              "value": "Access Management"
-            }
-          ]
-        },
-        {
-          "name": "Description",
-          "type": "textarea"
-        },
-        {
-          "name": "DetectedDateTime",
-          "type": "datetime"
-        },
-        {
-          "name": "EndDateTime",
-          "type": "datetime"
-        },
-        {
-          "name": "Impact",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "High",
-              "value": "High"
-            },
-            {
-              "label": "Medium",
-              "value": "Medium"
-            },
-            {
-              "label": "Low",
-              "value": "Low"
-            }
-          ]
-        },
-        {
-          "name": "IncidentNumber",
-          "type": "string"
-        },
-        {
-          "name": "IsClosed",
-          "type": "boolean"
-        },
-        {
-          "name": "IsDeleted",
-          "type": "boolean"
-        },
-        {
-          "name": "IsMajorIncident",
-          "type": "boolean"
-        },
-        {
-          "name": "IsStopped",
-          "type": "boolean"
-        },
-        {
-          "name": "Priority",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Critical",
-              "value": "Critical"
-            },
-            {
-              "label": "High",
-              "value": "High"
-            },
-            {
-              "label": "Moderate",
-              "value": "Moderate"
-            },
-            {
-              "label": "Low",
-              "value": "Low"
-            }
-          ]
-        },
-        {
-          "name": "PriorityOverrideReason",
-          "type": "string"
-        },
-        {
-          "name": "ReportedMethod",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Email",
-              "value": "Email"
-            },
-            {
-              "label": "Chat",
-              "value": "Chat"
-            }
-          ]
-        },
-        {
-          "name": "ReportedMethodIdentifier",
-          "type": "string"
-        },
-        {
-          "name": "ResolutionSummary",
-          "type": "string"
-        },
-        {
-          "name": "Status",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "New",
-              "value": "New"
-            },
-            {
-              "label": "Open",
-              "value": "Open"
-            },
-            {
-              "label": "In Progress",
-              "value": "In Progress"
-            },
-            {
-              "label": "Resolved",
-              "value": "Resolved"
-            },
-            {
-              "label": "Completed",
-              "value": "Completed"
-            },
-            {
-              "label": "Problem Created",
-              "value": "Problem Created"
-            },
-            {
-              "label": "Closed",
-              "value": "Closed"
-            }
-          ]
-        },
-        {
-          "name": "StatusCode",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "New",
-              "value": "New"
-            },
-            {
-              "label": "Open",
-              "value": "Open"
-            },
-            {
-              "label": "In Progress",
-              "value": "In Progress"
-            },
-            {
-              "label": "Resolved",
-              "value": "Resolved"
-            },
-            {
-              "label": "Completed",
-              "value": "Completed"
-            },
-            {
-              "label": "Problem Created",
-              "value": "Problem Created"
-            },
-            {
-              "label": "Closed",
-              "value": "Closed"
-            }
-          ]
-        },
-        {
-          "name": "Subject",
-          "type": "string"
-        },
-        {
-          "name": "Type",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "New",
-              "value": "New"
-            },
-            {
-              "label": "Recurring",
-              "value": "Recurring"
-            }
-          ]
-        },
-        {
-          "name": "Urgency",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "High",
-              "value": "High"
-            },
-            {
-              "label": "Medium",
-              "value": "Medium"
-            },
-            {
-              "label": "Low",
-              "value": "Low"
-            }
-          ]
-        },
-        {
-          "name": "AssignedGroupId",
-          "type": "id"
-        },
-        {
-          "name": "AssignedUserId",
-          "type": "id"
-        },
-        {
-          "name": "ParentIncidentId",
-          "type": "id"
-        },
-        {
-          "name": "BusinessHoursId",
-          "type": "id"
-        },
-        {
-          "name": "EntitlementId",
-          "type": "id"
-        }
-      ],
-      "relatedObjects": [
-        {
-          "name": "Group",
-          "referenceField": "AssignedGroupId"
-        },
-        { 
-          "name": "User",
-          "referenceField": "AssignedUserId"
-        },
-        {
-          "name": "Incident",
-          "referenceField": "ParentIncidentId"
-        },
-        {
-          "name": "BusinessHours",
-          "referenceField": "BusinessHoursId"
-        },
-        {
-          "name": "Entitlement",
-          "referenceField": "EntitlementId"
-        }
-      ],
-      "duplicateCheck": [],
-      "recordIds": [],
-      "formats": [],
-      "filters": [],
-      "numRecords": 20
-    },
-    "Problem": {
-      "fields":[
-        {
-          "name": "Category",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Database",
-              "value": "Database"
-            },
-            {
-              "label": "Hardware",
-              "value": "Hardware"
-            },
-            {
-              "label": "Inquiry / Help",
-              "value": "Inquiry / Help"
-            },
-            {
-              "label": "Network",
-              "value": "Network"
-            },
-            {
-              "label": "Software",
-              "value": "Software"
-            },
-            {
-              "label": "Security",
-              "value": "Security"
-            },
-            {
-              "label": "Telephony",
-              "value": "Telephony"
-            },
-            {
-              "label": "Storage",
-              "value": "Storage"
-            },
-            {
-              "label": "Email",
-              "value": "Email"
-            },
-            {
-              "label": "Access Management",
-              "value": "Access Management"
-            }
-          ]
-        },
-        {
-          "name": "Description",
-          "type": "textarea"
-        },
-        {
-          "name": "Impact",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "High",
-              "value": "High"
-            },
-            {
-              "label": "Medium",
-              "value": "Medium"
-            },
-            {
-              "label": "Low",
-              "value": "Low"
-            }
-          ]
-        },
-        {
-          "name": "IsDeleted",
-          "type": "boolean"
-        },
-        {
-          "name": "PermanentSolution",
-          "type": "textarea"
-        },
-        {
-          "name": "Priority",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Critical",
-              "value": "Critical"
-            },
-            {
-              "label": "High",
-              "value": "High"
-            },
-            {
-              "label": "Moderate",
-              "value": "Moderate"
-            },
-            {
-              "label": "Low",
-              "value": "Low"
-            }
-          ]
-        },
-        {
-          "name": "PriorityOverrideReason",
-          "type": "string"
-        },
-        {
-          "name": "ProblemNumber",
-          "type": "string"
-        },
-        {
-          "name": "ResolutionDateTime",
-          "type": "datetime"
-        },
-        {
-          "name": "ResolutionSummary",
-          "type": "textarea"
-        },
-        {
-          "name": "RootCauseSummary",
-          "type": "textarea"
-        },
-        {
-          "name": "Status",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "New",
-              "value": "New"
-            },
-            {
-              "label": "Open",
-              "value": "Open"
-            },
-            {
-              "label": "Root Case Analysis",
-              "value": "Root Case Analysis"
-            },
-            {
-              "label": "Fix In Progress",
-              "value": "Fix In Progress"
-            },
-            {
-              "label": "Resolved",
-              "value": "Resolved"
-            },
-            {
-              "label": "Closed",
-              "value": "Closed"
-            },
-            {
-              "label": "Pending Change",
-              "value": "Pending Change"
-            },
-            {
-              "label": "Known Error",
-              "value": "Known Error"
-            },
-            {
-              "label": "Work In Progress",
-              "value": "Work In Progress"
-            }
-          ]
-        },
-        {
-          "name": "StatusCode",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "Closed",
-              "value": "Closed"
-            },
-            {
-              "label": "Fix In Progress",
-              "value": "FixInProgress"
-            },
-            {
-              "label": "Known Error",
-              "value": "KnownError"
-            },
-            {
-              "label": "New",
-              "value": "New"
-            },
-            {
-              "label": "On Hold",
-              "value": "OnHold"
-            },
-            {
-              "label": "Open",
-              "value": "Open"
-            },
-            {
-              "label": "Pending Change",
-              "value": "PendingChange"
-            },
-            {
-              "label": "Qualified",
-              "value": "Qualified"
-            },
-            {
-              "label": "Resolved",
-              "value": "Resolved"
-            },
-            {
-              "label": "Risk Accepted",
-              "value": "RiskAccepted"
-            },
-            {
-              "label": "Root Case Analysis",
-              "value": "RootCaseAnalysis"
-            },
-            {
-              "label": "Working",
-              "value": "Working"
-            },
-            {
-              "label": "Work In Progress",
-              "value": "WorkInProgress"
-            }
-          ]
-        },
-        {
-          "name": "Subject",
-          "type": "string"
-        },
-        {
-          "name": "Urgency",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "High",
-              "value": "High"
-            },
-            {
-              "label": "Medium",
-              "value": "Medium"
-            },
-            {
-              "label": "Low",
-              "value": "Low"
-            }
-          ]
-        },
-        {
-          "name": "Workaround",
-          "type": "string"
-        },
-        {
-          "name": "AssignedGroupId",
-          "type": "id"
-        },
-        {
-          "name": "AssignedUserId",
-          "type": "id"
-        },
-        {
-          "name": "ParentProblemId",
-          "type": "id"
-        },
-        {
-          "name": "ResolvedById",
-          "type": "id"
-        }
-      ],
-      "relatedObjects": [
-        {
-          "name": "Group",
-          "referenceField": "AssignedGroupId"
-        },
-        { 
-          "name": "User",
-          "referenceField": "AssignedUserId"
-        },
-        {
-          "name": "Problem",
-          "referenceField": "ParentProblemId"
-        },
-        {
-          "name": "User",
-          "referenceField": "ResolvedById"
-        }
-      ],
-      "duplicateCheck": [],
-      "recordIds": [],
-      "formats": [],
-      "filters": [],
-      "numRecords": 20
-    },
-    "ChangeRequest": {
-      "fields":[
-        {
-          "name": "AssignedGroupId",
-          "label": "Assigned Group ID",
-          "type": "id"
-        },
-        {
-          "name": "AssignedUserId",
-          "label": "Assigned User ID",
-          "type": "id"
-        },
-        {
-          "name": "BusinessJustification",
-          "type": "textarea"
-        },
-        {
-          "name": "ChangeRequestNumber",
-          "type": "string"
-        },
-        {
-          "name": "ChangeType",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Standard",
-              "value": "Standard"
-            },
-            {
-              "label": "Normal",
-              "value": "Normal"
-            },
-            {
-              "label": "Major",
-              "value": "Major"
-            },
-            {
-              "label": "Emergency",
-              "value": "Emergency"
-            }
-          ]
-        },
-        {
-          "name": "ClosedStatusCode",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Successful",
-              "value": "Successful"
-            },
-            {
-              "label": "Partially Successful",
-              "value": "PartiallySuccessful"
-            },
-            {
-              "label": "Failed",
-              "value": "Failed"
-            }
-          ]
-        },
-        {
-          "name": "ClosedStatusComments",
-          "type": "textarea"
-        },
-        {
-          "name": "CompletionDate",
-          "type": "datetime"
-        },
-        {
-          "name": "Description",
-          "type": "textarea"
-        },
-        {
-          "name": "EstimatedEndTime",
-          "type": "datetime"
-        },
-        {
-          "name": "ReviewerId",
-          "type": "id"
-        }
-      ],
-      "relatedObjects": [
-        {
-          "name": "Group",
-          "referenceField": "AssignedGroupId"
-        },
-        { 
-          "name": "User",
-          "referenceField": "AssignedUserId"
-        },
-        {
-          "name": "User",
-          "referenceField": "ReviewerId"
-        }
-      ],
-      "duplicateCheck": [],
-      "recordIds": [],
-      "formats": [],
-      "filters": [],
-      "numRecords": 20
-    },
-    "Release": {
-      "fields":[
-        {
-          "name": "ActualDuration",
-          "type": "double"
-        },
-        {
-          "name": "ActualEndDate",
-          "type": "datetime"
-        },
-        {
-          "name": "ActualStartDate",
-          "type": "datetime"
-        },
-        {
-          "name": "ClosingSummary",
-          "type": "textarea"
-        },
-        {
-          "name": "DeploymentDate",
-          "type": "datetime"
-        },
-        {
-          "name": "Description",
-          "type": "textarea"
-        },
-        {
-          "name": "IsDeleted",
-          "type": "boolean"
-        },
-        {
-          "name": "Name",
-          "type": "string"
-        },
-        {
-          "name": "OwnerId",
-          "type": "id",
-          "label": "Owner ID"
-        },
-        {
-          "name": "PlannedDuration",
-          "type": "double"
-        },
-        {
-          "name": "PlannedEndDate",
-          "type": "datetime"
-        },
-        {
-          "name": "PlannedStartDate",
-          "type": "datetime"
-        },
-        {
-          "name": "Priority",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Critical",
-              "value": "Critical"
-            },
-            {
-              "label": "High",
-              "value": "High"
-            },
-            {
-              "label": "Moderate",
-              "value": "Moderate"
-            },
-            {
-              "label": "Low",
-              "value": "Low"
-            }
-          ]
-        },
-        {
-          "name": "RiskLevel",
-          "type": "picklist",
-          "unique": "false",
-          "picklistValues":[
-            {
-              "label": "Low",
-              "value": "Low"
-            },
-            {
-              "label": "Medium",
-              "value": "Medium"
-            },
-            {
-              "label": "High",
-              "value": "High"
-            }
-          ]
-        },
-        {
-          "name": "Status",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "New",
-              "value": "New"
-            },
-            {
-              "label": "In Progress",
-              "value": "In Progress"
-            },
-            {
-              "label": "Completed",
-              "value": "Completed"
-            },
-            {
-              "label": "Rolled Back",
-              "value": "Rolled Back"
-            },
-            {
-              "label": "Canceled",
-              "value": "Canceled"
-            },
-            {
-              "label": "Closed",
-              "value": "Closed"
-            }
-          ]
-        },
-        {
-          "name": "Type",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "Major",
-              "value": "Major"
-            },
-            {
-              "label": "Minor",
-              "value": "Minor"
-            },
-            {
-              "label": "Upgrade",
-              "value": "Upgrade"
-            },
-            {
-              "label": "Patch",
-              "value": "Patch"
-            },
-            {
-              "label": "Emergency",
-              "value": "Emergency"
-            },
-            {
-              "label": "Others",
-              "value": "Others"
-            }
-          ]
-        },
-        {
-          "name": "UsageType",
-          "type": "picklist",
-          "unique": false,
-          "picklistValues": [
-            {
-              "label": "Service Management",
-              "value": "ServiceManagement"
-            }
-          ]
-        }
-      ],
-      "relatedObjects":[
-        {
-          "name": "User",
-          "referenceField": "OwnerId"
-        }
-      ],
-      "duplicateCheck": [],
-      "recordIds": [],
-      "formats": [],
-      "numRecords": 15
-    }
+      "Incident": {
+          "fields": [
+              {
+                  "name": "Id",
+                  "type": "id"
+              },
+              {
+                  "name": "Category",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "Database",
+                          "value": "Database"
+                      },
+                      {
+                          "label": "Hardware",
+                          "value": "Hardware"
+                      },
+                      {
+                          "label": "Inquiry / Help",
+                          "value": "Inquiry / Help"
+                      },
+                      {
+                          "label": "Network",
+                          "value": "Network"
+                      },
+                      {
+                          "label": "Software",
+                          "value": "Software"
+                      },
+                      {
+                          "label": "Security",
+                          "value": "Security"
+                      },
+                      {
+                          "label": "Telephony",
+                          "value": "Telephony"
+                      },
+                      {
+                          "label": "Storage",
+                          "value": "Storage"
+                      },
+                      {
+                          "label": "Email",
+                          "value": "Email"
+                      },
+                      {
+                          "label": "Access Management",
+                          "value": "Access Management"
+                      }
+                  ]
+              },
+              {
+                  "name": "Description",
+                  "type": "textarea"
+              },
+              {
+                  "name": "DetectedDateTime",
+                  "type": "datetime"
+              },
+              {
+                  "name": "EndDateTime",
+                  "type": "datetime"
+              },
+              {
+                  "name": "Impact",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "High",
+                          "value": "High"
+                      },
+                      {
+                          "label": "Medium",
+                          "value": "Medium"
+                      },
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      }
+                  ]
+              },
+              {
+                  "name": "IsMajorIncident",
+                  "type": "boolean"
+              },
+              {
+                  "name": "Priority",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "Critical",
+                          "value": "Critical"
+                      },
+                      {
+                          "label": "High",
+                          "value": "High"
+                      },
+                      {
+                          "label": "Moderate",
+                          "value": "Moderate"
+                      },
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      }
+                  ]
+              },
+              {
+                  "name": "PriorityOverrideReason",
+                  "type": "string"
+              },
+              {
+                  "name": "ReportedMethod",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "Email",
+                          "value": "Email"
+                      },
+                      {
+                          "label": "Chat",
+                          "value": "Chat"
+                      }
+                  ]
+              },
+              {
+                  "name": "ReportedMethodIdentifier",
+                  "type": "string"
+              },
+              {
+                  "name": "ResolutionSummary",
+                  "type": "string"
+              },
+              {
+                  "name": "Status",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "New",
+                          "value": "New"
+                      },
+                      {
+                          "label": "Open",
+                          "value": "Open"
+                      },
+                      {
+                          "label": "In Progress",
+                          "value": "In Progress"
+                      },
+                      {
+                          "label": "Resolved",
+                          "value": "Resolved"
+                      },
+                      {
+                          "label": "Completed",
+                          "value": "Completed"
+                      },
+                      {
+                          "label": "Problem Created",
+                          "value": "Problem Created"
+                      },
+                      {
+                          "label": "Closed",
+                          "value": "Closed"
+                      }
+                  ]
+              },
+              {
+                  "name": "Subject",
+                  "type": "string"
+              },
+              {
+                  "name": "Type",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "New",
+                          "value": "New"
+                      },
+                      {
+                          "label": "Recurring",
+                          "value": "Recurring"
+                      }
+                  ]
+              },
+              {
+                  "name": "Urgency",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "High",
+                          "value": "High"
+                      },
+                      {
+                          "label": "Medium",
+                          "value": "Medium"
+                      },
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      }
+                  ]
+              },
+              {
+                  "name": "ParentIncidentId",
+                  "type": "id"
+              }
+          ],
+          "relatedObjects": [
+              {
+                  "name": "Incident",
+                  "referenceField": "ParentIncidentId"
+              }
+          ],
+          "duplicateCheck": [],
+          "recordIds": [],
+          "formats": [],
+          "filters": [],
+          "numRecords": 20
+      },
+      "Problem": {
+          "fields": [
+              {
+                  "name": "Id",
+                  "type": "id"
+              },
+              {
+                  "name": "Category",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "Database",
+                          "value": "Database"
+                      },
+                      {
+                          "label": "Hardware",
+                          "value": "Hardware"
+                      },
+                      {
+                          "label": "Inquiry / Help",
+                          "value": "Inquiry / Help"
+                      },
+                      {
+                          "label": "Network",
+                          "value": "Network"
+                      },
+                      {
+                          "label": "Software",
+                          "value": "Software"
+                      },
+                      {
+                          "label": "Security",
+                          "value": "Security"
+                      },
+                      {
+                          "label": "Telephony",
+                          "value": "Telephony"
+                      },
+                      {
+                          "label": "Storage",
+                          "value": "Storage"
+                      },
+                      {
+                          "label": "Email",
+                          "value": "Email"
+                      },
+                      {
+                          "label": "Access Management",
+                          "value": "Access Management"
+                      }
+                  ]
+              },
+              {
+                  "name": "Description",
+                  "type": "textarea"
+              },
+              {
+                  "name": "Impact",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "High",
+                          "value": "High"
+                      },
+                      {
+                          "label": "Medium",
+                          "value": "Medium"
+                      },
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      }
+                  ]
+              },
+              {
+                  "name": "PermanentSolution",
+                  "type": "textarea"
+              },
+              {
+                  "name": "Priority",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "Critical",
+                          "value": "Critical"
+                      },
+                      {
+                          "label": "High",
+                          "value": "High"
+                      },
+                      {
+                          "label": "Moderate",
+                          "value": "Moderate"
+                      },
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      }
+                  ]
+              },
+              {
+                  "name": "PriorityOverrideReason",
+                  "type": "string"
+              },
+              {
+                  "name": "ResolutionDateTime",
+                  "type": "datetime"
+              },
+              {
+                  "name": "ResolutionSummary",
+                  "type": "textarea"
+              },
+              {
+                  "name": "RootCauseSummary",
+                  "type": "textarea"
+              },
+              {
+                  "name": "Status",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "New",
+                          "value": "New"
+                      },
+                      {
+                          "label": "Open",
+                          "value": "Open"
+                      },
+                      {
+                          "label": "Root Case Analysis",
+                          "value": "Root Case Analysis"
+                      },
+                      {
+                          "label": "Fix In Progress",
+                          "value": "Fix In Progress"
+                      },
+                      {
+                          "label": "Resolved",
+                          "value": "Resolved"
+                      },
+                      {
+                          "label": "Closed",
+                          "value": "Closed"
+                      },
+                      {
+                          "label": "Pending Change",
+                          "value": "Pending Change"
+                      },
+                      {
+                          "label": "Known Error",
+                          "value": "Known Error"
+                      },
+                      {
+                          "label": "Work In Progress",
+                          "value": "Work In Progress"
+                      }
+                  ]
+              },
+              {
+                  "name": "Subject",
+                  "type": "string"
+              },
+              {
+                  "name": "Urgency",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "High",
+                          "value": "High"
+                      },
+                      {
+                          "label": "Medium",
+                          "value": "Medium"
+                      },
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      }
+                  ]
+              }
+          ],
+          "relatedObjects": [],
+          "duplicateCheck": [],
+          "recordIds": [],
+          "formats": [],
+          "filters": [],
+          "numRecords": 20
+      },
+      "Release": {
+          "fields": [
+              {
+                  "name": "Id",
+                  "type": "id"
+              },
+              {
+                  "name": "ActualEndDate",
+                  "type": "datetime"
+              },
+              {
+                  "name": "ActualStartDate",
+                  "type": "datetime"
+              },
+              {
+                  "name": "ClosingSummary",
+                  "type": "textarea"
+              },
+              {
+                  "name": "DeploymentDate",
+                  "type": "datetime"
+              },
+              {
+                  "name": "Description",
+                  "type": "textarea"
+              },
+              {
+                  "name": "Name",
+                  "type": "string"
+              },
+              {
+                  "name": "PlannedEndDate",
+                  "type": "datetime"
+              },
+              {
+                  "name": "PlannedStartDate",
+                  "type": "datetime"
+              },
+              {
+                  "name": "Priority",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "Critical",
+                          "value": "Critical"
+                      },
+                      {
+                          "label": "High",
+                          "value": "High"
+                      },
+                      {
+                          "label": "Moderate",
+                          "value": "Moderate"
+                      },
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      }
+                  ]
+              },
+              {
+                  "name": "RiskLevel",
+                  "type": "picklist",
+                  "unique": "false",
+                  "picklistValues": [
+                      {
+                          "label": "Low",
+                          "value": "Low"
+                      },
+                      {
+                          "label": "Medium",
+                          "value": "Medium"
+                      },
+                      {
+                          "label": "High",
+                          "value": "High"
+                      }
+                  ]
+              },
+              {
+                  "name": "Status",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "New",
+                          "value": "New"
+                      },
+                      {
+                          "label": "In Progress",
+                          "value": "In Progress"
+                      },
+                      {
+                          "label": "Completed",
+                          "value": "Completed"
+                      },
+                      {
+                          "label": "Rolled Back",
+                          "value": "Rolled Back"
+                      },
+                      {
+                          "label": "Canceled",
+                          "value": "Canceled"
+                      },
+                      {
+                          "label": "Closed",
+                          "value": "Closed"
+                      }
+                  ]
+              },
+              {
+                  "name": "Type",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "Major",
+                          "value": "Major"
+                      },
+                      {
+                          "label": "Minor",
+                          "value": "Minor"
+                      },
+                      {
+                          "label": "Upgrade",
+                          "value": "Upgrade"
+                      },
+                      {
+                          "label": "Patch",
+                          "value": "Patch"
+                      },
+                      {
+                          "label": "Emergency",
+                          "value": "Emergency"
+                      },
+                      {
+                          "label": "Others",
+                          "value": "Others"
+                      }
+                  ]
+              },
+              {
+                  "name": "UsageType",
+                  "type": "picklist",
+                  "unique": false,
+                  "picklistValues": [
+                      {
+                          "label": "Service Management",
+                          "value": "ServiceManagement"
+                      }
+                  ]
+              }
+          ],
+          "relatedObjects": [],
+          "duplicateCheck": [],
+          "recordIds": [],
+          "formats": [],
+          "numRecords": 15
+      }
   }
 }
