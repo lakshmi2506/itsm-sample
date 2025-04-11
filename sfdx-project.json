@@ -8,6 +8,6 @@
   "name": "itsm-sample",
   "namespace": "",
   "sfdcLoginUrl": "https://login.test1.pc-rnd.salesforce.com/", 
-  "signupTargetLoginUrl": "https://login.test1.pc-rnd.salesforce.com/",
+  "signupTargetLoginUrl": "https://test.test1.pc-rnd.salesforce.com/",
   "sourceApiVersion": "62.0"
 }

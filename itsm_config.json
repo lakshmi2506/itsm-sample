@@ -36,6 +36,41 @@
               {
                   "name": "Name",
                   "type": "text"
+              },
+              {
+                "name": "IsPersonAccount",
+                "type": "boolean"
+              },
+              {
+                "name": "RecordTypeId",
+                "type": "id"
+              }
+          ],
+          "relatedObjects": [
+            {
+                "name": "RecordType",
+                "referenceField": "RecordTypeId"
+            }
+          ],
+          "duplicateCheck": [],
+          "recordIds": [],
+          "formats": [],
+          "filters": [],
+          "numRecords": 20
+      },
+      "RecordType": {
+          "fields": [
+              {
+                  "name": "Id",
+                  "type": "id"
+              },
+              {
+                  "name": "SobjectType",
+                  "type": "text"
+              },
+              {
+                "name": "Name",
+                "type": "text"
               }
           ],
           "relatedObjects": [],
@@ -45,6 +80,5 @@
           "filters": [],
           "numRecords": 20
       }
-
-      }
   }
+}
